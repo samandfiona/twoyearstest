@@ -1,73 +1,176 @@
 body{
-margin: 0px;
-padding: 0px;
-font-family: 'Montserrat'
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Montserrat'
 }
 
 h1{
-  font-size: 32px;
+  font-size: 34px;
   text-align: center;
-  line-height: 2;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   background-color: black;
+  color: white;
 }
-
-/* .container{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
-  margin: auto;
-  width: 100%;
-} */
 
 div{
   object-fit: fill;
   overflow: hidden;
 }
 
-footer{
+.container{
+  display: grid;
+  margin: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 350px 350px 350px 350px
+  350px 350px 350px 350px 350px 350px 350px auto;
+}
+
+.note{
   background-color: black;
   color: white;
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
   grid-column: 1 / -1;
+  font-size: 24px;
 }
 
-/* @media screen and (min-width: 600px){
-  h1{
-    color: #F00;
-  }
+.img-one{
+  grid-row: 3 / span 1;
+  grid-column: 1 / span 1;
+  background: url("../anni_pics/img_one.jpg");
+  background-size: 100% 100%;
+}
 
-  .container{
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 350px 350px 350px 350px
-    350px 350px 100px;
-    }
+.img-two{
+  grid-row: 6 / span 1;
+  grid-column: 2 / span 1;
+  background: url("../anni_pics/img_two.jpg");
+  background-size: 100% 100%;
+}
 
-  .img-three{
-    grid-column: 1 / span 2;
-  }
+.img-three{
+  grid-row: 1 / span 1;
+  grid-column: 2 / span 1;
+  background: url("../anni_pics/img_three.jpg");
+  background-size: 100% 100%;
+}
 
-  .img-six{
-    grid-column: 1 / span 2;
-  }
+.img-four{
+  grid-row: 7 / span 1;
+  grid-column: 2 / span 1;
+  background: url("../anni_pics/img_four.jpg");
+  background-size: 100% 100%;
+}
 
-  .img-seven{
-    grid-row: 6 / auto;
-    grid-column: 1 / span 2;
-  }
+.img-five{
+  grid-row: 4 / span 1;
+  grid-column: 1 / span 1;
+  background: url("../anni_pics/img_five.jpg");
+  background-size: 100% 100%;
+}
 
-  .img-eight{
-    grid-column: 2 / span 1;
-  }
+.img-six{
+  grid-row: 6 / span 1;
+  grid-column: 1 / span 1;
+  background: url("../anni_pics/img_six.jpg");
+  background-size: 100% 100%;
+}
 
-  .img-nine{
-    grid-column: 1 / span 1;
-    grid-row: 5 / auto;
-  }
-} */
+.img-seven{
+  grid-row: 10 / span 1;
+  grid-column: 1 / span 1;
+  background: url("../anni_pics/img_seven.jpg");
+  background-size: 100% 100%;
+}
 
-/* @media screen and (min-width: 1000px){ */
+.img-eight{
+  grid-row: 10 / span 1;
+  grid-column: 2 / span 1;
+  background: url("../anni_pics/img_eight.jpg");
+  background-size: 100% 100%;
+}
+
+.img-nine{
+  grid-row: 9 / span 1;
+  grid-column: 2 / span 1;
+  background: url("../anni_pics/img_nine.jpg");
+  background-size: 100% 100%;
+}
+
+.img-ten{
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+  background: url("../anni_pics/img_ten.jpg");
+  background-size: 100% 100%;
+}
+
+.img-eleven{
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 2;
+  background: url("../anni_pics/img_eleven.gif");
+  background-size: 100% 100%;
+}
+
+.img-twelve{
+  grid-row: 7 / span 1;
+  grid-column: 1 / span 1;
+  background: url("../anni_pics/img_twelve.gif");
+  background-size: 100% 100%;
+}
+
+.img-thirteen{
+  grid-row: 5 / span 1;
+  grid-column: 1 / span 2;
+  background: url("../anni_pics/img_thirteen.gif");
+  background-size: 100% 100%;
+}
+
+.img-fourteen{
+  grid-row: 11 / span 1;
+  grid-column: 1 / span 2;
+  background: url("../anni_pics/img_fourteen.gif");
+  background-size: 100% 100%;
+}
+
+.img-fifteen{
+  grid-row: 8 / span 1;
+  grid-column: 1 / span 2;
+  background: url("../anni_pics/img_fifteen.gif");
+  background-size: 100% 100%;
+}
+
+.img-sixteen{
+  grid-row: 9 / span 1;
+  grid-column: 1 / span 1;
+  background: url("../anni_pics/img_sixteen.jpg");
+  background-size: 100% 100%;
+}
+
+.img-seventeen{
+  grid-row: 4 / span 1;
+  grid-column: 2 / span 1;
+  background: url("../anni_pics/img_seventeen.jpg");
+  background-size: 100% 100%;
+}
+
+.img-eighteen{
+  grid-row: 3 / span 1;
+  grid-column: 2 / span 1;
+  background: url("../anni_pics/img_eighteen.jpg");
+  background-size: 100% 100%;
+}
+
+footer{
+  font-size: 24px;
+}
+
+@media screen and (min-width: 1000px){
   h1{
     color: white;
   }
@@ -76,7 +179,7 @@ footer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 350px 350px 350px
-    350px 350px 350px 350px 350px 100px;
+    350px 350px 350px 350px 350px auto;
   }
 
   .img-one{
@@ -87,8 +190,8 @@ footer{
   }
 
   .img-two{
-    grid-row: 5 / span 2;
-    grid-column: 1 / span 1;
+    grid-row: 11 / span 1;
+    grid-column: 2 / span 1;
     background: url("../anni_pics/img_two.jpg");
     background-size: 100% 100%;
   }
@@ -101,43 +204,43 @@ footer{
   }
 
   .img-four{
-    grid-row: 5 / span 2;
-    grid-column: 2 / span 1;
+    grid-row: 11 / span 1;
+    grid-column: 1 / span 1;
     background: url("../anni_pics/img_four.jpg");
     background-size: 100% 100%;
   }
 
   .img-five{
-    grid-row: 3 / span 1;
+    grid-row: 4 / span 1;
     grid-column: 1 / span 1;
     background: url("../anni_pics/img_five.jpg");
     background-size: 100% 100%;
   }
 
   .img-six{
-    grid-row: 8 / span 1;
-    grid-column: 2 / span 1;
+    grid-row: 6 / span 1;
+    grid-column: 1 / span 1;
     background: url("../anni_pics/img_six.jpg");
     background-size: 100% 100%;
   }
 
   .img-seven{
-    grid-row: 4 / span 1;
-    grid-column: 4 / span 1;
+    grid-row: 10 / span 1;
+    grid-column: 1 / span 1;
     background: url("../anni_pics/img_seven.jpg");
     background-size: 100% 100%;
   }
 
   .img-eight{
-    grid-row: 5 / span 1;
-    grid-column: 3 / span 1;
+    grid-row: 10 / span 1;
+    grid-column: 2 / span 1;
     background: url("../anni_pics/img_eight.jpg");
     background-size: 100% 100%;
   }
 
   .img-nine{
-    grid-row: 6 / span 2;
-    grid-column: 3 / span 2;
+    grid-row: 9 / span 1;
+    grid-column: 2 / span 1;
     background: url("../anni_pics/img_nine.jpg");
     background-size: 100% 100%;
   }
@@ -157,54 +260,55 @@ footer{
   }
 
   .img-twelve{
-    grid-row: 5 / span 1;
-    grid-column: 4 / span 1;
+    grid-row: 7 / span 1;
+    grid-column: 1 / span 1;
     background: url("../anni_pics/img_twelve.gif");
     background-size: 100% 100%;
   }
 
   .img-thirteen{
-    grid-row: 7 / span 1;
+    grid-row: 5 / span 1;
     grid-column: 1 / span 2;
     background: url("../anni_pics/img_thirteen.gif");
     background-size: 100% 100%;
   }
 
   .img-fourteen{
-    grid-row: 4 / span 1;
-    grid-column: 1 / span 2;
+    grid-row: 6 / span 1;
+    grid-column: 2 / span 1;
     background: url("../anni_pics/img_fourteen.gif");
     background-size: 100% 100%;
   }
 
   .img-fifteen{
     grid-row: 8 / span 1;
-    grid-column: 3 / span 2;
+    grid-column: 1 / span 2;
     background: url("../anni_pics/img_fifteen.gif");
     background-size: 100% 100%;
   }
 
   .img-sixteen{
-    grid-row: 2 / span 2;
-    grid-column: 3 / span 1;
+    grid-row: 9 / span 1;
+    grid-column: 1 / span 1;
     background: url("../anni_pics/img_sixteen.jpg");
     background-size: 100% 100%;
   }
 
   .img-seventeen{
-    grid-row: 2 / span 2;
-    grid-column: 4 / span 1;
+    grid-row: 4 / span 1;
+    grid-column: 2 / span 1;
     background: url("../anni_pics/img_seventeen.jpg");
     background-size: 100% 100%;
   }
 
   .img-eighteen{
-    grid-row: 8 / span 1;
-    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+    grid-column: 2 / span 1;
     background: url("../anni_pics/img_eighteen.jpg");
     background-size: 100% 100%;
   }
 
-  footer{
+  .note{
     font-size: 24px;
   }
+}
