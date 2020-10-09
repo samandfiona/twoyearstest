@@ -25,7 +25,7 @@ div{
   margin: auto;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 350px 350px 350px 350px
-  350px 350px 350px 350px 350px 350px 350px auto;
+  350px 350px 350px 350px 350px 350px 350px 100px;
 }
 
 .note{
@@ -38,6 +38,8 @@ div{
   padding-right: 5px;
   grid-column: 1 / -1;
   font-size: 24px;
+  grid-row: 12 / span 1;
+  grid-column: 1 / span 2;
 }
 
 .img-one{
@@ -166,20 +168,13 @@ div{
   background-size: 100% 100%;
 }
 
-footer{
-  font-size: 24px;
-}
-
 @media screen and (min-width: 1000px){
-  h1{
-    color: white;
-  }
 
   .container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 350px 350px 350px
-    350px 350px 350px 350px 350px auto;
+    350px 350px 350px 350px 350px 100px;
   }
 
   .img-one{
@@ -306,6 +301,11 @@ footer{
     grid-column: 2 / span 1;
     background: url("../anni_pics/img_eighteen.jpg");
     background-size: 100% 100%;
+  }
+
+  .note{
+    grid-row: 9 / span 1;
+    grid-column: 1 / span 4;
   }
 
 }
